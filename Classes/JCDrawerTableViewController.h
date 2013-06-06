@@ -19,7 +19,6 @@
 
 - (UITableViewCell *)drawerTableView:(UITableView *)tableView drawerCellForSection:(NSInteger)section;
 - (CGFloat)drawerTableView:(UITableView *)tableView heightForDrawerCellInSection:(NSInteger)section;
-//- (UIView *)drawerTableView:(UITableView *)tableView viewForDrawerCellInSection:(NSInteger)section;
 
 - (NSInteger)numberOfSectionsInDrawerTableView:(UITableView *)tableView;
 
@@ -47,7 +46,6 @@
 @property (nonatomic) UITableViewScrollPosition tableViewScrollPosition;
 
 - (id)init;
-- (id)initWithTableViewRowAnimation:(UITableViewRowAnimation)animation
-                     scrollPosition:(UITableViewScrollPosition)scrollPosition;
+- (id)initWithTableViewRowAnimation:(UITableViewRowAnimation)animation scrollPosition:(UITableViewScrollPosition)scrollPosition;
 
 @end

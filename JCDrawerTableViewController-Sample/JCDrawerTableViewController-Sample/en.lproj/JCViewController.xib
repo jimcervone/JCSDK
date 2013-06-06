@@ -103,7 +103,7 @@
 							<object class="IBUILabel" id="783852597">
 								<reference key="NSNextResponder" ref="185053895"/>
 								<int key="NSvFlags">292</int>
-								<string key="NSFrame">{{82, 21}, {156, 21}}</string>
+								<string key="NSFrame">{{79, 21}, {162, 21}}</string>
 								<reference key="NSSuperview" ref="185053895"/>
 								<reference key="NSWindow"/>
 								<reference key="NSNextKeyView"/>
@@ -113,7 +113,7 @@
 								<int key="IBUIContentMode">7</int>
 								<bool key="IBUIUserInteractionEnabled">NO</bool>
 								<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
-								<string key="IBUIText">THIS IS A DRAWER</string>
+								<string key="IBUIText">NERDCORE MUSIC!</string>
 								<object class="NSColor" key="IBUITextColor">
 									<int key="NSColorSpace">1</int>
 									<bytes key="NSRGB">MCAwIDAAA</bytes>

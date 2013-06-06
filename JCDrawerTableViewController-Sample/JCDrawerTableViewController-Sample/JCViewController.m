@@ -21,22 +21,10 @@
     if (!(self = [super initWithTableViewRowAnimation:UITableViewRowAnimationFade
                                        scrollPosition:UITableViewScrollPositionMiddle])) return nil;
     
-    NSArray *arr = [NSArray arrayWithObjects:@"This is number one", @"dis is numba two", @"Cupertino3",@"Nerdcore Rap", nil];
+    NSArray *arr = [NSArray arrayWithObjects:@"MC Frontalot", @"1UP", @"Alpha Riff", @"MC Lars", nil];
     [self setSampleArray:arr];
     
     return self;
-}
-
-- (void)viewDidLoad
-{
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 #pragma mark - JCDrawerTableViewDataSource Methods

@@ -27,8 +27,7 @@
     return self;
 }
 
-- (id)initWithTableViewRowAnimation:(UITableViewRowAnimation)animation
-                     scrollPosition:(UITableViewScrollPosition)scrollPosition
+- (id)initWithTableViewRowAnimation:(UITableViewRowAnimation)animation scrollPosition:(UITableViewScrollPosition)scrollPosition
 {
     if (!(self = [super init])) return nil;
     
