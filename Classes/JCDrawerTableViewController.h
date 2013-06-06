@@ -45,7 +45,11 @@
 @property (nonatomic) UITableViewRowAnimation tableViewRowAnimation;
 @property (nonatomic) UITableViewScrollPosition tableViewScrollPosition;
 
+#pragma mark - Initialization Methods
 - (id)init;
 - (id)initWithTableViewRowAnimation:(UITableViewRowAnimation)animation scrollPosition:(UITableViewScrollPosition)scrollPosition;
+
+#pragma mark - Getter Method For Selected Index Path
+- (NSIndexPath *)selectedIndexPath;
 
 @end

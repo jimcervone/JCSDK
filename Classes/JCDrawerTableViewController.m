@@ -160,6 +160,12 @@
     return [self drawerTableView:tableView viewForFooterInSection:section];
 }
 
+#pragma mark - Getter Method For Selected Index Path
+- (NSIndexPath *)selectedIndexPath
+{
+    return [self selectedIndexPath];
+}
+
 #pragma mark - Default Methods
 - (NSInteger)numberOfSectionsInDrawerTableView:(UITableView *)tableView
 {
