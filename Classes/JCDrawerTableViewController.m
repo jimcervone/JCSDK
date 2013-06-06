@@ -74,59 +74,62 @@
 #pragma mark - UITableViewDelegate Methods
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSIndexPath *newDrawerIndexPath = [NSIndexPath indexPathForRow:([indexPath row]+1)
-                                                         inSection:[indexPath section]];
-    NSArray *newDrawerIndexPathArray = [NSArray arrayWithObject:newDrawerIndexPath];
-    
-    if ([self selectedIndexPath] == nil)
+    if ([self shouldPresentDrawerAtIndexPath:indexPath])
     {
-        //  open new drawer
-        [self setSelectedIndexPath:indexPath];
-        [tableView insertRowsAtIndexPaths:newDrawerIndexPathArray withRowAnimation:[self tableViewRowAnimation]];
-        [tableView scrollToRowAtIndexPath:indexPath atScrollPosition:[self tableViewScrollPosition] animated:YES];
+        NSIndexPath *newDrawerIndexPath = [NSIndexPath indexPathForRow:([indexPath row]+1)
+                                                             inSection:[indexPath section]];
+        NSArray *newDrawerIndexPathArray = [NSArray arrayWithObject:newDrawerIndexPath];
         
-        //  call delegate method
-        [self drawerTableView:tableView didSelectRowAtIndexPath:indexPath];
-    }
-    else
-    {
-        NSIndexPath *previousDrawerIndexPath = [NSIndexPath indexPathForRow:([[self selectedIndexPath] row]+1)
-                                                                  inSection:[[self selectedIndexPath] section]];
-        NSArray *previousDrawerIndexPathArray = [NSArray arrayWithObject:previousDrawerIndexPath];
-        
-        if ([[self selectedIndexPath]isEqual:indexPath])
+        if ([self selectedIndexPath] == nil)
         {
-            //  close already-open drawer
-            [self setSelectedIndexPath:nil];
-            [tableView deleteRowsAtIndexPaths:previousDrawerIndexPathArray withRowAnimation:[self tableViewRowAnimation]];
-            
-            //  call delegate method
-            [self drawerTableView:tableView didSelectRowAtIndexPath:indexPath];
-        }
-        else if ([previousDrawerIndexPath isEqual:indexPath] == NO)
-        {
-            //  close already-open drawer
-            [self setSelectedIndexPath:nil];
-            [tableView deleteRowsAtIndexPaths:previousDrawerIndexPathArray withRowAnimation:[self tableViewRowAnimation]];
-            
-            //  decrement for the case of row being below previous drawer
-            if ([previousDrawerIndexPath row] < [indexPath row])
-            {                
-                newDrawerIndexPath = [NSIndexPath indexPathForRow:([newDrawerIndexPath row]-1)
-                                                        inSection:[newDrawerIndexPath section]];
-                newDrawerIndexPathArray = [NSArray arrayWithObject:newDrawerIndexPath];
-                
-                indexPath = [NSIndexPath indexPathForRow:([indexPath row]-1) inSection:[indexPath section]];
-            }
-            
             //  open new drawer
             [self setSelectedIndexPath:indexPath];
             [tableView insertRowsAtIndexPaths:newDrawerIndexPathArray withRowAnimation:[self tableViewRowAnimation]];
+            [tableView scrollToRowAtIndexPath:indexPath atScrollPosition:[self tableViewScrollPosition] animated:YES];
             
             //  call delegate method
             [self drawerTableView:tableView didSelectRowAtIndexPath:indexPath];
         }
-        //else - do nothing
+        else
+        {
+            NSIndexPath *previousDrawerIndexPath = [NSIndexPath indexPathForRow:([[self selectedIndexPath] row]+1)
+                                                                      inSection:[[self selectedIndexPath] section]];
+            NSArray *previousDrawerIndexPathArray = [NSArray arrayWithObject:previousDrawerIndexPath];
+            
+            if ([[self selectedIndexPath]isEqual:indexPath])
+            {
+                //  close already-open drawer
+                [self setSelectedIndexPath:nil];
+                [tableView deleteRowsAtIndexPaths:previousDrawerIndexPathArray withRowAnimation:[self tableViewRowAnimation]];
+                
+                //  call delegate method
+                [self drawerTableView:tableView didSelectRowAtIndexPath:indexPath];
+            }
+            else if ([previousDrawerIndexPath isEqual:indexPath] == NO)
+            {
+                //  close already-open drawer
+                [self setSelectedIndexPath:nil];
+                [tableView deleteRowsAtIndexPaths:previousDrawerIndexPathArray withRowAnimation:[self tableViewRowAnimation]];
+                
+                //  decrement for the case of row being below previous drawer
+                if ([previousDrawerIndexPath row] < [indexPath row])
+                {                
+                    newDrawerIndexPath = [NSIndexPath indexPathForRow:([newDrawerIndexPath row]-1)
+                                                            inSection:[newDrawerIndexPath section]];
+                    newDrawerIndexPathArray = [NSArray arrayWithObject:newDrawerIndexPath];
+                    
+                    indexPath = [NSIndexPath indexPathForRow:([indexPath row]-1) inSection:[indexPath section]];
+                }
+                
+                //  open new drawer
+                [self setSelectedIndexPath:indexPath];
+                [tableView insertRowsAtIndexPaths:newDrawerIndexPathArray withRowAnimation:[self tableViewRowAnimation]];
+                
+                //  call delegate method
+                [self drawerTableView:tableView didSelectRowAtIndexPath:indexPath];
+            }
+            //else - do nothing
+        }
     }
 }
 
@@ -210,6 +213,11 @@
 - (NSInteger)drawerTableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return 0;
+}
+
+- (BOOL)shouldPresentDrawerAtIndexPath:(NSIndexPath *)indexPath
+{
+    return YES;
 }
 
 @end

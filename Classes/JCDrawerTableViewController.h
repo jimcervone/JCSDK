@@ -36,6 +36,8 @@
 - (UIView *)drawerTableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section;
 - (UIView *)drawerTableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section;
 
+- (BOOL)shouldPresentDrawerAtIndexPath:(NSIndexPath *)indexPath;
+
 @end
 
 @interface JCDrawerTableViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
