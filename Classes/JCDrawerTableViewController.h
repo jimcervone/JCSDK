@@ -40,6 +40,8 @@
 
 @interface JCDrawerTableViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
+@property (nonatomic, readonly) NSIndexPath *selectedIndexPath;
+
 @property (nonatomic) IBOutlet UITableView *tableView;
 
 @property (nonatomic) UITableViewRowAnimation tableViewRowAnimation;
@@ -48,8 +50,5 @@
 #pragma mark - Initialization Methods
 - (id)init;
 - (id)initWithTableViewRowAnimation:(UITableViewRowAnimation)animation scrollPosition:(UITableViewScrollPosition)scrollPosition;
-
-#pragma mark - Getter Method For Selected Index Path
-- (NSIndexPath *)selectedIndexPath;
 
 @end

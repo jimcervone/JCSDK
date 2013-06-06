@@ -10,7 +10,7 @@
 
 @interface JCDrawerTableViewController () <JCDrawerTableViewDataSource, JCDrawerTableViewDelegate>
 
-@property (nonatomic) NSIndexPath *selectedIndexPath;
+@property (nonatomic, readwrite) NSIndexPath *selectedIndexPath;
 
 @end
 
@@ -42,7 +42,8 @@
 {
     NSInteger drawerCount = 0;
     if ([self selectedIndexPath] != nil)
-        drawerCount++;
+        if ([[self selectedIndexPath] section] == section)
+            drawerCount++;
     
     NSInteger numberOfRowsInSection = [self drawerTableView:tableView numberOfRowsInSection:section];
     return numberOfRowsInSection+drawerCount;
@@ -158,12 +159,6 @@
 - (UIView *)tableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section
 {
     return [self drawerTableView:tableView viewForFooterInSection:section];
-}
-
-#pragma mark - Getter Method For Selected Index Path
-- (NSIndexPath *)selectedIndexPath
-{
-    return [self selectedIndexPath];
 }
 
 #pragma mark - Default Methods
