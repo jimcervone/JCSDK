@@ -54,7 +54,9 @@
     NSIndexPath *originalIndexPath = indexPath;
     if ([self selectedIndexPath] != nil)
     {
-        if ([indexPath row] == [[self selectedIndexPath] row]+1)
+        NSIndexPath *drawerIndexPath = [NSIndexPath indexPathForRow:([[self selectedIndexPath] row]+1)
+                                                          inSection:[[self selectedIndexPath] section]];
+        if ([indexPath isEqual:drawerIndexPath])
             return [self drawerTableView:tableView drawerCellForSection:[indexPath section]];
         
         else if ([indexPath row] > [[self selectedIndexPath] row]+1)
