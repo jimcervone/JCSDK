@@ -57,7 +57,7 @@
         NSIndexPath *drawerIndexPath = [NSIndexPath indexPathForRow:([[self selectedIndexPath] row]+1)
                                                           inSection:[[self selectedIndexPath] section]];
         if ([indexPath isEqual:drawerIndexPath])
-            return [self drawerTableView:tableView drawerCellForSection:[indexPath section]];
+            return [self drawerTableView:tableView drawerCellForSelectedRowAtIndexPath:indexPath];
         
         else if ([indexPath row] > [[self selectedIndexPath] row]+1)
             originalIndexPath = [NSIndexPath indexPathForRow:([indexPath row]-1) inSection:[indexPath section]];
@@ -74,7 +74,12 @@
 #pragma mark - UITableViewDelegate Methods
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    if ([self shouldPresentDrawerAtIndexPath:indexPath])
+    NSIndexPath *originalIndexPath = indexPath;
+    if ([indexPath section] == [[self selectedIndexPath] section] &&
+        [indexPath row] > [[self selectedIndexPath] row])
+        originalIndexPath = [NSIndexPath indexPathForRow:([originalIndexPath row]-1) inSection:[originalIndexPath section]];
+    
+    if ([self shouldPresentDrawerAtIndexPath:originalIndexPath])
     {
         NSIndexPath *newDrawerIndexPath = [NSIndexPath indexPathForRow:([indexPath row]+1)
                                                              inSection:[indexPath section]];
@@ -113,7 +118,7 @@
                 
                 //  decrement for the case of row being below previous drawer
                 if ([previousDrawerIndexPath row] < [indexPath row])
-                {                
+                {
                     newDrawerIndexPath = [NSIndexPath indexPathForRow:([newDrawerIndexPath row]-1)
                                                             inSection:[newDrawerIndexPath section]];
                     newDrawerIndexPathArray = [NSArray arrayWithObject:newDrawerIndexPath];
@@ -138,7 +143,7 @@
     if ([self selectedIndexPath] != nil)
     {
         NSIndexPath *drawerIndexPath = [NSIndexPath indexPathForRow:([[self selectedIndexPath] row]+1)
-                                                                  inSection:[[self selectedIndexPath] section]];
+                                                          inSection:[[self selectedIndexPath] section]];
         if ([indexPath isEqual:drawerIndexPath])
             return [self drawerTableView:tableView heightForDrawerCellInSection:[indexPath section]];
     }
@@ -193,9 +198,9 @@
     return 0;
 }
 
-- (UITableViewCell *)drawerTableView:(UITableView *)tableView drawerCellForSection:(NSInteger)section
+- (UITableViewCell *)drawerTableView:(UITableView *)tableView drawerCellForSelectedRowAtIndexPath:(NSIndexPath *)indexPath;
 {
-    NSLog(@"ERROR: No implementation of -drawerTableView:drawerCellForSection:");
+    NSLog(@"ERROR: No implementation of -drawerTableView:drawerCellForSelectedRowAtIndexPath:");
     return nil;
 }
 
@@ -218,6 +223,12 @@
 - (BOOL)shouldPresentDrawerAtIndexPath:(NSIndexPath *)indexPath
 {
     return YES;
+}
+
+#pragma mark - Reset Selected Index Path
+- (void)resetSelectedIndexPath
+{
+    [self setSelectedIndexPath:nil];
 }
 
 @end

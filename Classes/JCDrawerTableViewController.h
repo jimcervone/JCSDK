@@ -17,7 +17,7 @@
 
 @optional
 
-- (UITableViewCell *)drawerTableView:(UITableView *)tableView drawerCellForSection:(NSInteger)section;
+- (UITableViewCell *)drawerTableView:(UITableView *)tableView drawerCellForSelectedRowAtIndexPath:(NSIndexPath *)indexPath;
 - (CGFloat)drawerTableView:(UITableView *)tableView heightForDrawerCellInSection:(NSInteger)section;
 
 - (NSInteger)numberOfSectionsInDrawerTableView:(UITableView *)tableView;
@@ -52,5 +52,8 @@
 #pragma mark - Initialization Methods
 - (id)init;
 - (id)initWithTableViewRowAnimation:(UITableViewRowAnimation)animation scrollPosition:(UITableViewScrollPosition)scrollPosition;
+
+#pragma mark - Reset Selected Index Path
+- (void)resetSelectedIndexPath;
 
 @end
