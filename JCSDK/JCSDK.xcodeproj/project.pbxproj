@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		387541F51772A14B00289B5D /* JCDrawerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 387541F41772A14B00289B5D /* JCDrawerTableViewController.m */; };
+		387541F61772A14B00289B5D /* JCDrawerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 387541F41772A14B00289B5D /* JCDrawerTableViewController.m */; };
 		3890AF8E17729B5100EC8051 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3890AF8D17729B5100EC8051 /* Foundation.framework */; };
 		3890AF9317729B5100EC8051 /* JCSDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3890AF9217729B5100EC8051 /* JCSDK.h */; };
 		3890AF9517729B5100EC8051 /* JCSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 3890AF9417729B5100EC8051 /* JCSDK.m */; };
@@ -16,8 +18,6 @@
 		3890AFA217729B5100EC8051 /* libJCSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3890AF8A17729B5100EC8051 /* libJCSDK.a */; };
 		3890AFA817729B5100EC8051 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3890AFA617729B5100EC8051 /* InfoPlist.strings */; };
 		3890AFAA17729B5100EC8051 /* JCSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3890AFA917729B5100EC8051 /* JCSDKTests.m */; };
-		3890AFB717729B9300EC8051 /* JCDrawerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3890AFB617729B9300EC8051 /* JCDrawerTableViewController.m */; };
-		3890AFB817729B9300EC8051 /* JCDrawerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3890AFB617729B9300EC8051 /* JCDrawerTableViewController.m */; };
 		3890AFBC17729C8D00EC8051 /* UITableViewCell+JCIBExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3890AFBB17729C8D00EC8051 /* UITableViewCell+JCIBExtensions.m */; };
 		3890AFBD17729C8D00EC8051 /* UITableViewCell+JCIBExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3890AFBB17729C8D00EC8051 /* UITableViewCell+JCIBExtensions.m */; };
 /* End PBXBuildFile section */
@@ -46,6 +46,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		387541F31772A14B00289B5D /* JCDrawerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCDrawerTableViewController.h; sourceTree = "<group>"; };
+		387541F41772A14B00289B5D /* JCDrawerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCDrawerTableViewController.m; sourceTree = "<group>"; };
 		3890AF8A17729B5100EC8051 /* libJCSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJCSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3890AF8D17729B5100EC8051 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3890AF9117729B5100EC8051 /* JCSDK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JCSDK-Prefix.pch"; sourceTree = "<group>"; };
@@ -57,8 +59,6 @@
 		3890AFA517729B5100EC8051 /* JCSDKTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JCSDKTests-Info.plist"; sourceTree = "<group>"; };
 		3890AFA717729B5100EC8051 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		3890AFA917729B5100EC8051 /* JCSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCSDKTests.m; sourceTree = "<group>"; };
-		3890AFB517729B9300EC8051 /* JCDrawerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCDrawerTableViewController.h; sourceTree = "<group>"; };
-		3890AFB617729B9300EC8051 /* JCDrawerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCDrawerTableViewController.m; sourceTree = "<group>"; };
 		3890AFBA17729C8D00EC8051 /* UITableViewCell+JCIBExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+JCIBExtensions.h"; sourceTree = "<group>"; };
 		3890AFBB17729C8D00EC8051 /* UITableViewCell+JCIBExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+JCIBExtensions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,6 +86,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		387541F21772A14B00289B5D /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				387541F31772A14B00289B5D /* JCDrawerTableViewController.h */,
+				387541F41772A14B00289B5D /* JCDrawerTableViewController.m */,
+			);
+			name = Classes;
+			path = ../../Classes;
+			sourceTree = "<group>";
+		};
 		3890AF8117729B5100EC8051 = {
 			isa = PBXGroup;
 			children = (
@@ -118,8 +128,8 @@
 		3890AF8F17729B5100EC8051 /* JCSDK */ = {
 			isa = PBXGroup;
 			children = (
+				387541F21772A14B00289B5D /* Classes */,
 				3890AFB917729C3000EC8051 /* Categories */,
-				3890AFB317729B9300EC8051 /* Classes */,
 				3890AF9217729B5100EC8051 /* JCSDK.h */,
 				3890AF9417729B5100EC8051 /* JCSDK.m */,
 				3890AF9017729B5100EC8051 /* Supporting Files */,
@@ -151,24 +161,6 @@
 				3890AFA617729B5100EC8051 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		3890AFB317729B9300EC8051 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				3890AFB417729B9300EC8051 /* JCDrawerTableViewController */,
-			);
-			name = Classes;
-			path = ../../Classes;
-			sourceTree = "<group>";
-		};
-		3890AFB417729B9300EC8051 /* JCDrawerTableViewController */ = {
-			isa = PBXGroup;
-			children = (
-				3890AFB517729B9300EC8051 /* JCDrawerTableViewController.h */,
-				3890AFB617729B9300EC8051 /* JCDrawerTableViewController.m */,
-			);
-			path = JCDrawerTableViewController;
 			sourceTree = "<group>";
 		};
 		3890AFB917729C3000EC8051 /* Categories */ = {
@@ -263,8 +255,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3890AF9517729B5100EC8051 /* JCSDK.m in Sources */,
+				387541F51772A14B00289B5D /* JCDrawerTableViewController.m in Sources */,
 				3890AFBC17729C8D00EC8051 /* UITableViewCell+JCIBExtensions.m in Sources */,
-				3890AFB717729B9300EC8051 /* JCDrawerTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,8 +265,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				3890AFAA17729B5100EC8051 /* JCSDKTests.m in Sources */,
+				387541F61772A14B00289B5D /* JCDrawerTableViewController.m in Sources */,
 				3890AFBD17729C8D00EC8051 /* UITableViewCell+JCIBExtensions.m in Sources */,
-				3890AFB817729B9300EC8051 /* JCDrawerTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +437,7 @@
 				3890AFAF17729B5100EC8051 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3890AFB017729B5100EC8051 /* Build configuration list for PBXNativeTarget "JCSDKTests" */ = {
 			isa = XCConfigurationList;
@@ -453,6 +446,7 @@
 				3890AFB217729B5100EC8051 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
