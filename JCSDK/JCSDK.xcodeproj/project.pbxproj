@@ -1,0 +1,443 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3890AF8E17729B5100EC8051 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3890AF8D17729B5100EC8051 /* Foundation.framework */; };
+		3890AF9317729B5100EC8051 /* JCSDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3890AF9217729B5100EC8051 /* JCSDK.h */; };
+		3890AF9517729B5100EC8051 /* JCSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 3890AF9417729B5100EC8051 /* JCSDK.m */; };
+		3890AF9C17729B5100EC8051 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3890AF9B17729B5100EC8051 /* XCTest.framework */; };
+		3890AF9D17729B5100EC8051 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3890AF8D17729B5100EC8051 /* Foundation.framework */; };
+		3890AF9F17729B5100EC8051 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3890AF9E17729B5100EC8051 /* UIKit.framework */; };
+		3890AFA217729B5100EC8051 /* libJCSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3890AF8A17729B5100EC8051 /* libJCSDK.a */; };
+		3890AFA817729B5100EC8051 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3890AFA617729B5100EC8051 /* InfoPlist.strings */; };
+		3890AFAA17729B5100EC8051 /* JCSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3890AFA917729B5100EC8051 /* JCSDKTests.m */; };
+		3890AFB717729B9300EC8051 /* JCDrawerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3890AFB617729B9300EC8051 /* JCDrawerTableViewController.m */; };
+		3890AFB817729B9300EC8051 /* JCDrawerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3890AFB617729B9300EC8051 /* JCDrawerTableViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3890AFA017729B5100EC8051 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3890AF8217729B5100EC8051 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3890AF8917729B5100EC8051;
+			remoteInfo = JCSDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3890AF8817729B5100EC8051 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				3890AF9317729B5100EC8051 /* JCSDK.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3890AF8A17729B5100EC8051 /* libJCSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJCSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		3890AF8D17729B5100EC8051 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		3890AF9117729B5100EC8051 /* JCSDK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JCSDK-Prefix.pch"; sourceTree = "<group>"; };
+		3890AF9217729B5100EC8051 /* JCSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCSDK.h; sourceTree = "<group>"; };
+		3890AF9417729B5100EC8051 /* JCSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCSDK.m; sourceTree = "<group>"; };
+		3890AF9A17729B5100EC8051 /* JCSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JCSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3890AF9B17729B5100EC8051 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		3890AF9E17729B5100EC8051 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		3890AFA517729B5100EC8051 /* JCSDKTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JCSDKTests-Info.plist"; sourceTree = "<group>"; };
+		3890AFA717729B5100EC8051 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		3890AFA917729B5100EC8051 /* JCSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCSDKTests.m; sourceTree = "<group>"; };
+		3890AFB517729B9300EC8051 /* JCDrawerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCDrawerTableViewController.h; sourceTree = "<group>"; };
+		3890AFB617729B9300EC8051 /* JCDrawerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCDrawerTableViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3890AF8717729B5100EC8051 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3890AF8E17729B5100EC8051 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3890AF9717729B5100EC8051 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3890AF9C17729B5100EC8051 /* XCTest.framework in Frameworks */,
+				3890AF9F17729B5100EC8051 /* UIKit.framework in Frameworks */,
+				3890AF9D17729B5100EC8051 /* Foundation.framework in Frameworks */,
+				3890AFA217729B5100EC8051 /* libJCSDK.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3890AF8117729B5100EC8051 = {
+			isa = PBXGroup;
+			children = (
+				3890AF8F17729B5100EC8051 /* JCSDK */,
+				3890AFA317729B5100EC8051 /* JCSDKTests */,
+				3890AF8C17729B5100EC8051 /* Frameworks */,
+				3890AF8B17729B5100EC8051 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3890AF8B17729B5100EC8051 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3890AF8A17729B5100EC8051 /* libJCSDK.a */,
+				3890AF9A17729B5100EC8051 /* JCSDKTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3890AF8C17729B5100EC8051 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3890AF8D17729B5100EC8051 /* Foundation.framework */,
+				3890AF9B17729B5100EC8051 /* XCTest.framework */,
+				3890AF9E17729B5100EC8051 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3890AF8F17729B5100EC8051 /* JCSDK */ = {
+			isa = PBXGroup;
+			children = (
+				3890AFB317729B9300EC8051 /* Classes */,
+				3890AF9217729B5100EC8051 /* JCSDK.h */,
+				3890AF9417729B5100EC8051 /* JCSDK.m */,
+				3890AF9017729B5100EC8051 /* Supporting Files */,
+			);
+			path = JCSDK;
+			sourceTree = "<group>";
+		};
+		3890AF9017729B5100EC8051 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3890AF9117729B5100EC8051 /* JCSDK-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3890AFA317729B5100EC8051 /* JCSDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				3890AFA917729B5100EC8051 /* JCSDKTests.m */,
+				3890AFA417729B5100EC8051 /* Supporting Files */,
+			);
+			path = JCSDKTests;
+			sourceTree = "<group>";
+		};
+		3890AFA417729B5100EC8051 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3890AFA517729B5100EC8051 /* JCSDKTests-Info.plist */,
+				3890AFA617729B5100EC8051 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3890AFB317729B9300EC8051 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3890AFB417729B9300EC8051 /* JCDrawerTableViewController */,
+			);
+			name = Classes;
+			path = ../../Classes;
+			sourceTree = "<group>";
+		};
+		3890AFB417729B9300EC8051 /* JCDrawerTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3890AFB517729B9300EC8051 /* JCDrawerTableViewController.h */,
+				3890AFB617729B9300EC8051 /* JCDrawerTableViewController.m */,
+			);
+			path = JCDrawerTableViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3890AF8917729B5100EC8051 /* JCSDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3890AFAD17729B5100EC8051 /* Build configuration list for PBXNativeTarget "JCSDK" */;
+			buildPhases = (
+				3890AF8617729B5100EC8051 /* Sources */,
+				3890AF8717729B5100EC8051 /* Frameworks */,
+				3890AF8817729B5100EC8051 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JCSDK;
+			productName = JCSDK;
+			productReference = 3890AF8A17729B5100EC8051 /* libJCSDK.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		3890AF9917729B5100EC8051 /* JCSDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3890AFB017729B5100EC8051 /* Build configuration list for PBXNativeTarget "JCSDKTests" */;
+			buildPhases = (
+				3890AF9617729B5100EC8051 /* Sources */,
+				3890AF9717729B5100EC8051 /* Frameworks */,
+				3890AF9817729B5100EC8051 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3890AFA117729B5100EC8051 /* PBXTargetDependency */,
+			);
+			name = JCSDKTests;
+			productName = JCSDKTests;
+			productReference = 3890AF9A17729B5100EC8051 /* JCSDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3890AF8217729B5100EC8051 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Jim Cervone";
+			};
+			buildConfigurationList = 3890AF8517729B5100EC8051 /* Build configuration list for PBXProject "JCSDK" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3890AF8117729B5100EC8051;
+			productRefGroup = 3890AF8B17729B5100EC8051 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3890AF8917729B5100EC8051 /* JCSDK */,
+				3890AF9917729B5100EC8051 /* JCSDKTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3890AF9817729B5100EC8051 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3890AFA817729B5100EC8051 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3890AF8617729B5100EC8051 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3890AF9517729B5100EC8051 /* JCSDK.m in Sources */,
+				3890AFB717729B9300EC8051 /* JCDrawerTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3890AF9617729B5100EC8051 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3890AFAA17729B5100EC8051 /* JCSDKTests.m in Sources */,
+				3890AFB817729B9300EC8051 /* JCDrawerTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3890AFA117729B5100EC8051 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3890AF8917729B5100EC8051 /* JCSDK */;
+			targetProxy = 3890AFA017729B5100EC8051 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3890AFA617729B5100EC8051 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3890AFA717729B5100EC8051 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3890AFAB17729B5100EC8051 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		3890AFAC17729B5100EC8051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3890AFAE17729B5100EC8051 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/JCSDK.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JCSDK/JCSDK-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3890AFAF17729B5100EC8051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/JCSDK.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JCSDK/JCSDK-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		3890AFB117729B5100EC8051 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JCSDK/JCSDK-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "JCSDKTests/JCSDKTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		3890AFB217729B5100EC8051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JCSDK/JCSDK-Prefix.pch";
+				INFOPLIST_FILE = "JCSDKTests/JCSDKTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3890AF8517729B5100EC8051 /* Build configuration list for PBXProject "JCSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3890AFAB17729B5100EC8051 /* Debug */,
+				3890AFAC17729B5100EC8051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3890AFAD17729B5100EC8051 /* Build configuration list for PBXNativeTarget "JCSDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3890AFAE17729B5100EC8051 /* Debug */,
+				3890AFAF17729B5100EC8051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		3890AFB017729B5100EC8051 /* Build configuration list for PBXNativeTarget "JCSDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3890AFB117729B5100EC8051 /* Debug */,
+				3890AFB217729B5100EC8051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3890AF8217729B5100EC8051 /* Project object */;
+}
