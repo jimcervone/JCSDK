@@ -18,6 +18,8 @@
 		3890AFAA17729B5100EC8051 /* JCSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3890AFA917729B5100EC8051 /* JCSDKTests.m */; };
 		3890AFB717729B9300EC8051 /* JCDrawerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3890AFB617729B9300EC8051 /* JCDrawerTableViewController.m */; };
 		3890AFB817729B9300EC8051 /* JCDrawerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3890AFB617729B9300EC8051 /* JCDrawerTableViewController.m */; };
+		3890AFBC17729C8D00EC8051 /* UITableViewCell+JCIBExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3890AFBB17729C8D00EC8051 /* UITableViewCell+JCIBExtensions.m */; };
+		3890AFBD17729C8D00EC8051 /* UITableViewCell+JCIBExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3890AFBB17729C8D00EC8051 /* UITableViewCell+JCIBExtensions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		3890AFA917729B5100EC8051 /* JCSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCSDKTests.m; sourceTree = "<group>"; };
 		3890AFB517729B9300EC8051 /* JCDrawerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCDrawerTableViewController.h; sourceTree = "<group>"; };
 		3890AFB617729B9300EC8051 /* JCDrawerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCDrawerTableViewController.m; sourceTree = "<group>"; };
+		3890AFBA17729C8D00EC8051 /* UITableViewCell+JCIBExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+JCIBExtensions.h"; sourceTree = "<group>"; };
+		3890AFBB17729C8D00EC8051 /* UITableViewCell+JCIBExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+JCIBExtensions.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +118,7 @@
 		3890AF8F17729B5100EC8051 /* JCSDK */ = {
 			isa = PBXGroup;
 			children = (
+				3890AFB917729C3000EC8051 /* Categories */,
 				3890AFB317729B9300EC8051 /* Classes */,
 				3890AF9217729B5100EC8051 /* JCSDK.h */,
 				3890AF9417729B5100EC8051 /* JCSDK.m */,
@@ -164,6 +169,16 @@
 				3890AFB617729B9300EC8051 /* JCDrawerTableViewController.m */,
 			);
 			path = JCDrawerTableViewController;
+			sourceTree = "<group>";
+		};
+		3890AFB917729C3000EC8051 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				3890AFBA17729C8D00EC8051 /* UITableViewCell+JCIBExtensions.h */,
+				3890AFBB17729C8D00EC8051 /* UITableViewCell+JCIBExtensions.m */,
+			);
+			name = Categories;
+			path = ../../Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3890AF9517729B5100EC8051 /* JCSDK.m in Sources */,
+				3890AFBC17729C8D00EC8051 /* UITableViewCell+JCIBExtensions.m in Sources */,
 				3890AFB717729B9300EC8051 /* JCDrawerTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -257,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3890AFAA17729B5100EC8051 /* JCSDKTests.m in Sources */,
+				3890AFBD17729C8D00EC8051 /* UITableViewCell+JCIBExtensions.m in Sources */,
 				3890AFB817729B9300EC8051 /* JCDrawerTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
