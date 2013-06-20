@@ -37,11 +37,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		388B1C8817604A74005E9C71 /* JCSDK-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JCSDK-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		388B1C8817604A74005E9C71 /* JCDrawerTableViewController-Sample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JCDrawerTableViewController-Sample.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		388B1C8B17604A74005E9C71 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		388B1C8D17604A74005E9C71 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		388B1C8F17604A74005E9C71 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		388B1C9317604A74005E9C71 /* JCSDK-Sample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JCSDK-Sample-Info.plist"; sourceTree = "<group>"; };
+		388B1C9317604A74005E9C71 /* JCDrawerTableViewController-Sample-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JCDrawerTableViewController-Sample-Info.plist"; sourceTree = "<group>"; };
 		388B1C9517604A74005E9C71 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		388B1C9717604A74005E9C71 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		388B1C9917604A74005E9C71 /* JCSDK-Sample-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JCSDK-Sample-Prefix.pch"; sourceTree = "<group>"; };
@@ -53,9 +53,9 @@
 		388B1CA317604A74005E9C71 /* JCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCViewController.h; sourceTree = "<group>"; };
 		388B1CA417604A74005E9C71 /* JCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCViewController.m; sourceTree = "<group>"; };
 		388B1CA717604A74005E9C71 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/JCViewController.xib; sourceTree = "<group>"; };
-		388B1CAE17604A74005E9C71 /* JCSDK-SampleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "JCSDK-SampleTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		388B1CAE17604A74005E9C71 /* JCDrawerTableViewController-SampleTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "JCDrawerTableViewController-SampleTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		388B1CAF17604A74005E9C71 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		388B1CB717604A74005E9C71 /* JCSDK-SampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JCSDK-SampleTests-Info.plist"; sourceTree = "<group>"; };
+		388B1CB717604A74005E9C71 /* JCDrawerTableViewController-SampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "JCDrawerTableViewController-SampleTests-Info.plist"; sourceTree = "<group>"; };
 		388B1CB917604A74005E9C71 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		388B1CBB17604A74005E9C71 /* JCDrawerTableViewController_SampleTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCDrawerTableViewController_SampleTests.h; sourceTree = "<group>"; };
 		388B1CBC17604A74005E9C71 /* JCDrawerTableViewController_SampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCDrawerTableViewController_SampleTests.m; sourceTree = "<group>"; };
@@ -101,8 +101,8 @@
 		388B1C8917604A74005E9C71 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				388B1C8817604A74005E9C71 /* JCSDK-Sample.app */,
-				388B1CAE17604A74005E9C71 /* JCSDK-SampleTests.octest */,
+				388B1C8817604A74005E9C71 /* JCDrawerTableViewController-Sample.app */,
+				388B1CAE17604A74005E9C71 /* JCDrawerTableViewController-SampleTests.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -134,7 +134,7 @@
 		388B1C9217604A74005E9C71 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				388B1C9317604A74005E9C71 /* JCSDK-Sample-Info.plist */,
+				388B1C9317604A74005E9C71 /* JCDrawerTableViewController-Sample-Info.plist */,
 				388B1C9417604A74005E9C71 /* InfoPlist.strings */,
 				388B1C9717604A74005E9C71 /* main.m */,
 				388B1C9917604A74005E9C71 /* JCSDK-Sample-Prefix.pch */,
@@ -158,7 +158,7 @@
 		388B1CB617604A74005E9C71 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				388B1CB717604A74005E9C71 /* JCSDK-SampleTests-Info.plist */,
+				388B1CB717604A74005E9C71 /* JCDrawerTableViewController-SampleTests-Info.plist */,
 				388B1CB817604A74005E9C71 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -185,9 +185,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		388B1C8717604A74005E9C71 /* JCSDK-Sample */ = {
+		388B1C8717604A74005E9C71 /* JCDrawerTableViewController-Sample */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 388B1CC017604A74005E9C71 /* Build configuration list for PBXNativeTarget "JCSDK-Sample" */;
+			buildConfigurationList = 388B1CC017604A74005E9C71 /* Build configuration list for PBXNativeTarget "JCDrawerTableViewController-Sample" */;
 			buildPhases = (
 				388B1C8417604A74005E9C71 /* Sources */,
 				388B1C8517604A74005E9C71 /* Frameworks */,
@@ -197,14 +197,14 @@
 			);
 			dependencies = (
 			);
-			name = "JCSDK-Sample";
+			name = "JCDrawerTableViewController-Sample";
 			productName = "JCDrawerTableViewController-Sample";
-			productReference = 388B1C8817604A74005E9C71 /* JCSDK-Sample.app */;
+			productReference = 388B1C8817604A74005E9C71 /* JCDrawerTableViewController-Sample.app */;
 			productType = "com.apple.product-type.application";
 		};
-		388B1CAD17604A74005E9C71 /* JCSDK-SampleTests */ = {
+		388B1CAD17604A74005E9C71 /* JCDrawerTableViewController-SampleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 388B1CC317604A74005E9C71 /* Build configuration list for PBXNativeTarget "JCSDK-SampleTests" */;
+			buildConfigurationList = 388B1CC317604A74005E9C71 /* Build configuration list for PBXNativeTarget "JCDrawerTableViewController-SampleTests" */;
 			buildPhases = (
 				388B1CA917604A74005E9C71 /* Sources */,
 				388B1CAA17604A74005E9C71 /* Frameworks */,
@@ -216,9 +216,9 @@
 			dependencies = (
 				388B1CB417604A74005E9C71 /* PBXTargetDependency */,
 			);
-			name = "JCSDK-SampleTests";
+			name = "JCDrawerTableViewController-SampleTests";
 			productName = "JCDrawerTableViewController-SampleTests";
-			productReference = 388B1CAE17604A74005E9C71 /* JCSDK-SampleTests.octest */;
+			productReference = 388B1CAE17604A74005E9C71 /* JCDrawerTableViewController-SampleTests.octest */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -231,7 +231,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = "Jim Cervone";
 			};
-			buildConfigurationList = 388B1C8317604A74005E9C71 /* Build configuration list for PBXProject "JCSDK-Sample" */;
+			buildConfigurationList = 388B1C8317604A74005E9C71 /* Build configuration list for PBXProject "JCDrawerTableViewController-Sample" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -243,8 +243,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				388B1C8717604A74005E9C71 /* JCSDK-Sample */,
-				388B1CAD17604A74005E9C71 /* JCSDK-SampleTests */,
+				388B1C8717604A74005E9C71 /* JCDrawerTableViewController-Sample */,
+				388B1CAD17604A74005E9C71 /* JCDrawerTableViewController-SampleTests */,
 			);
 		};
 /* End PBXProject section */
@@ -313,7 +313,7 @@
 /* Begin PBXTargetDependency section */
 		388B1CB417604A74005E9C71 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 388B1C8717604A74005E9C71 /* JCSDK-Sample */;
+			target = 388B1C8717604A74005E9C71 /* JCDrawerTableViewController-Sample */;
 			targetProxy = 388B1CB317604A74005E9C71 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -406,9 +406,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "JCDrawerTableViewController-Sample/JCSDK-Sample-Prefix.pch";
-				INFOPLIST_FILE = "JCDrawerTableViewController-Sample/JCSDK-Sample-Info.plist";
-				PRODUCT_NAME = "JCSDK-Sample";
+				GCC_PREFIX_HEADER = "JCDrawerTableViewController-Sample/JCDrawerTableViewController-Sample-Prefix.pch";
+				INFOPLIST_FILE = "JCDrawerTableViewController-Sample/JCDrawerTableViewController-Sample-Info.plist";
+				PRODUCT_NAME = "JCDrawerTableViewController-Sample";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -417,9 +417,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "JCDrawerTableViewController-Sample/JCSDK-Sample-Prefix.pch";
-				INFOPLIST_FILE = "JCDrawerTableViewController-Sample/JCSDK-Sample-Info.plist";
-				PRODUCT_NAME = "JCSDK-Sample";
+				GCC_PREFIX_HEADER = "JCDrawerTableViewController-Sample/JCDrawerTableViewController-Sample-Prefix.pch";
+				INFOPLIST_FILE = "JCDrawerTableViewController-Sample/JCDrawerTableViewController-Sample-Info.plist";
+				PRODUCT_NAME = "JCDrawerTableViewController-Sample";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -434,8 +434,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JCDrawerTableViewController-Sample/JCDrawerTableViewController-Sample-Prefix.pch";
-				INFOPLIST_FILE = "JCDrawerTableViewController-SampleTests/JCSDK-SampleTests-Info.plist";
-				PRODUCT_NAME = "JCSDK-SampleTests";
+				INFOPLIST_FILE = "JCDrawerTableViewController-SampleTests/JCDrawerTableViewController-SampleTests-Info.plist";
+				PRODUCT_NAME = "JCDrawerTableViewController-SampleTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -451,8 +451,8 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "JCDrawerTableViewController-Sample/JCDrawerTableViewController-Sample-Prefix.pch";
-				INFOPLIST_FILE = "JCDrawerTableViewController-SampleTests/JCSDK-SampleTests-Info.plist";
-				PRODUCT_NAME = "JCSDK-SampleTests";
+				INFOPLIST_FILE = "JCDrawerTableViewController-SampleTests/JCDrawerTableViewController-SampleTests-Info.plist";
+				PRODUCT_NAME = "JCDrawerTableViewController-SampleTests";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
 			};
@@ -461,7 +461,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		388B1C8317604A74005E9C71 /* Build configuration list for PBXProject "JCSDK-Sample" */ = {
+		388B1C8317604A74005E9C71 /* Build configuration list for PBXProject "JCDrawerTableViewController-Sample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				388B1CBE17604A74005E9C71 /* Debug */,
@@ -470,7 +470,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		388B1CC017604A74005E9C71 /* Build configuration list for PBXNativeTarget "JCSDK-Sample" */ = {
+		388B1CC017604A74005E9C71 /* Build configuration list for PBXNativeTarget "JCDrawerTableViewController-Sample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				388B1CC117604A74005E9C71 /* Debug */,
@@ -479,7 +479,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		388B1CC317604A74005E9C71 /* Build configuration list for PBXNativeTarget "JCSDK-SampleTests" */ = {
+		388B1CC317604A74005E9C71 /* Build configuration list for PBXNativeTarget "JCDrawerTableViewController-SampleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				388B1CC417604A74005E9C71 /* Debug */,
