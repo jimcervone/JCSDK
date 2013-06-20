@@ -11,7 +11,6 @@
 		387541F61772A14B00289B5D /* JCDrawerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 387541F41772A14B00289B5D /* JCDrawerTableViewController.m */; };
 		3890AF8E17729B5100EC8051 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3890AF8D17729B5100EC8051 /* Foundation.framework */; };
 		3890AF9317729B5100EC8051 /* JCSDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3890AF9217729B5100EC8051 /* JCSDK.h */; };
-		3890AF9517729B5100EC8051 /* JCSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = 3890AF9417729B5100EC8051 /* JCSDK.m */; };
 		3890AF9C17729B5100EC8051 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3890AF9B17729B5100EC8051 /* XCTest.framework */; };
 		3890AF9D17729B5100EC8051 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3890AF8D17729B5100EC8051 /* Foundation.framework */; };
 		3890AF9F17729B5100EC8051 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3890AF9E17729B5100EC8051 /* UIKit.framework */; };
@@ -52,7 +51,6 @@
 		3890AF8D17729B5100EC8051 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3890AF9117729B5100EC8051 /* JCSDK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JCSDK-Prefix.pch"; sourceTree = "<group>"; };
 		3890AF9217729B5100EC8051 /* JCSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCSDK.h; sourceTree = "<group>"; };
-		3890AF9417729B5100EC8051 /* JCSDK.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCSDK.m; sourceTree = "<group>"; };
 		3890AF9A17729B5100EC8051 /* JCSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JCSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3890AF9B17729B5100EC8051 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		3890AF9E17729B5100EC8051 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
@@ -131,7 +129,6 @@
 				387541F21772A14B00289B5D /* Classes */,
 				3890AFB917729C3000EC8051 /* Categories */,
 				3890AF9217729B5100EC8051 /* JCSDK.h */,
-				3890AF9417729B5100EC8051 /* JCSDK.m */,
 				3890AF9017729B5100EC8051 /* Supporting Files */,
 			);
 			path = JCSDK;
@@ -254,7 +251,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3890AF9517729B5100EC8051 /* JCSDK.m in Sources */,
 				387541F51772A14B00289B5D /* JCDrawerTableViewController.m in Sources */,
 				3890AFBC17729C8D00EC8051 /* UITableViewCell+JCIBExtensions.m in Sources */,
 			);

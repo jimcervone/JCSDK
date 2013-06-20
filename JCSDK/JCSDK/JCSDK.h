@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 Jim Cervone. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#pragma mark Classes
+#import "JCDrawerTableViewController.h"
 
-@interface JCSDK : NSObject
-
-@end
+#pragma mark Categories
+#import "UITableViewCell+JCIBExtensions"
