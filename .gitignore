@@ -35,3 +35,6 @@ xcuserdata
 # svn & cvs
 .svn
 CVS
+
+# other files
+JCSDK/JCSDK/Resources/zipcodes.xml

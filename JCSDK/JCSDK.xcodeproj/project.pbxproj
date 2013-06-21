@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		387541F51772A14B00289B5D /* JCDrawerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 387541F41772A14B00289B5D /* JCDrawerTableViewController.m */; };
 		387541F61772A14B00289B5D /* JCDrawerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 387541F41772A14B00289B5D /* JCDrawerTableViewController.m */; };
+		387541FD1772A3A300289B5D /* JCZipCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 387541FC1772A3A300289B5D /* JCZipCode.m */; };
+		387541FE1772A3A300289B5D /* JCZipCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 387541FC1772A3A300289B5D /* JCZipCode.m */; };
+		387542041772A6F100289B5D /* postalCodeData.xml in Resources */ = {isa = PBXBuildFile; fileRef = 387542031772A6F100289B5D /* postalCodeData.xml */; };
 		3890AF8E17729B5100EC8051 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3890AF8D17729B5100EC8051 /* Foundation.framework */; };
 		3890AF9317729B5100EC8051 /* JCSDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3890AF9217729B5100EC8051 /* JCSDK.h */; };
 		3890AF9C17729B5100EC8051 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3890AF9B17729B5100EC8051 /* XCTest.framework */; };
@@ -47,9 +50,12 @@
 /* Begin PBXFileReference section */
 		387541F31772A14B00289B5D /* JCDrawerTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCDrawerTableViewController.h; sourceTree = "<group>"; };
 		387541F41772A14B00289B5D /* JCDrawerTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCDrawerTableViewController.m; sourceTree = "<group>"; };
+		387541FB1772A3A300289B5D /* JCZipCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCZipCode.h; sourceTree = "<group>"; };
+		387541FC1772A3A300289B5D /* JCZipCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCZipCode.m; sourceTree = "<group>"; };
+		387542021772A67F00289B5D /* JCSDK-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JCSDK-Prefix.pch"; sourceTree = "<group>"; };
+		387542031772A6F100289B5D /* postalCodeData.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = postalCodeData.xml; sourceTree = "<group>"; };
 		3890AF8A17729B5100EC8051 /* libJCSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJCSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3890AF8D17729B5100EC8051 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		3890AF9117729B5100EC8051 /* JCSDK-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JCSDK-Prefix.pch"; sourceTree = "<group>"; };
 		3890AF9217729B5100EC8051 /* JCSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCSDK.h; sourceTree = "<group>"; };
 		3890AF9A17729B5100EC8051 /* JCSDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JCSDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3890AF9B17729B5100EC8051 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -89,10 +95,30 @@
 			children = (
 				387541F31772A14B00289B5D /* JCDrawerTableViewController.h */,
 				387541F41772A14B00289B5D /* JCDrawerTableViewController.m */,
+				387541FB1772A3A300289B5D /* JCZipCode.h */,
+				387541FC1772A3A300289B5D /* JCZipCode.m */,
 			);
 			name = Classes;
 			path = ../../Classes;
 			sourceTree = "<group>";
+		};
+		387542001772A67F00289B5D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				387542031772A6F100289B5D /* postalCodeData.xml */,
+			);
+			name = Resources;
+			path = JCSDK/Resources;
+			sourceTree = SOURCE_ROOT;
+		};
+		387542011772A67F00289B5D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				387542021772A67F00289B5D /* JCSDK-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = "JCSDK/Supporting Files";
+			sourceTree = SOURCE_ROOT;
 		};
 		3890AF8117729B5100EC8051 = {
 			isa = PBXGroup;
@@ -126,20 +152,13 @@
 		3890AF8F17729B5100EC8051 /* JCSDK */ = {
 			isa = PBXGroup;
 			children = (
+				3890AF9217729B5100EC8051 /* JCSDK.h */,
 				387541F21772A14B00289B5D /* Classes */,
 				3890AFB917729C3000EC8051 /* Categories */,
-				3890AF9217729B5100EC8051 /* JCSDK.h */,
-				3890AF9017729B5100EC8051 /* Supporting Files */,
+				387542001772A67F00289B5D /* Resources */,
+				387542011772A67F00289B5D /* Supporting Files */,
 			);
 			path = JCSDK;
-			sourceTree = "<group>";
-		};
-		3890AF9017729B5100EC8051 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				3890AF9117729B5100EC8051 /* JCSDK-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		3890AFA317729B5100EC8051 /* JCSDKTests */ = {
@@ -241,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3890AFA817729B5100EC8051 /* InfoPlist.strings in Resources */,
+				387542041772A6F100289B5D /* postalCodeData.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +273,7 @@
 			files = (
 				387541F51772A14B00289B5D /* JCDrawerTableViewController.m in Sources */,
 				3890AFBC17729C8D00EC8051 /* UITableViewCell+JCIBExtensions.m in Sources */,
+				387541FD1772A3A300289B5D /* JCZipCode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3890AFAA17729B5100EC8051 /* JCSDKTests.m in Sources */,
+				387541FE1772A3A300289B5D /* JCZipCode.m in Sources */,
 				387541F61772A14B00289B5D /* JCDrawerTableViewController.m in Sources */,
 				3890AFBD17729C8D00EC8051 /* UITableViewCell+JCIBExtensions.m in Sources */,
 			);
