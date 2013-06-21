@@ -14,7 +14,9 @@ typedef void(^JCErrorCallbackBlock)();
 typedef enum {
     JCCountryUS,
     JCCountryMX,
-    JCCountryCA
+    JCCountryCA,
+    JCCountryAU,
+    JCCountryES
 } JCCountry;
 
 @interface JCZipCode : NSObject

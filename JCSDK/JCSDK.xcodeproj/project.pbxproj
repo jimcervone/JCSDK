@@ -11,7 +11,6 @@
 		387541F61772A14B00289B5D /* JCDrawerTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 387541F41772A14B00289B5D /* JCDrawerTableViewController.m */; };
 		387541FD1772A3A300289B5D /* JCZipCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 387541FC1772A3A300289B5D /* JCZipCode.m */; };
 		387541FE1772A3A300289B5D /* JCZipCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 387541FC1772A3A300289B5D /* JCZipCode.m */; };
-		387542041772A6F100289B5D /* postalCodeData.xml in Resources */ = {isa = PBXBuildFile; fileRef = 387542031772A6F100289B5D /* postalCodeData.xml */; };
 		3890AF8E17729B5100EC8051 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3890AF8D17729B5100EC8051 /* Foundation.framework */; };
 		3890AF9317729B5100EC8051 /* JCSDK.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 3890AF9217729B5100EC8051 /* JCSDK.h */; };
 		3890AF9C17729B5100EC8051 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3890AF9B17729B5100EC8051 /* XCTest.framework */; };
@@ -53,7 +52,6 @@
 		387541FB1772A3A300289B5D /* JCZipCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCZipCode.h; sourceTree = "<group>"; };
 		387541FC1772A3A300289B5D /* JCZipCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCZipCode.m; sourceTree = "<group>"; };
 		387542021772A67F00289B5D /* JCSDK-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "JCSDK-Prefix.pch"; sourceTree = "<group>"; };
-		387542031772A6F100289B5D /* postalCodeData.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = postalCodeData.xml; sourceTree = "<group>"; };
 		3890AF8A17729B5100EC8051 /* libJCSDK.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJCSDK.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3890AF8D17729B5100EC8051 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		3890AF9217729B5100EC8051 /* JCSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JCSDK.h; sourceTree = "<group>"; };
@@ -65,6 +63,7 @@
 		3890AFA917729B5100EC8051 /* JCSDKTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JCSDKTests.m; sourceTree = "<group>"; };
 		3890AFBA17729C8D00EC8051 /* UITableViewCell+JCIBExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+JCIBExtensions.h"; sourceTree = "<group>"; };
 		3890AFBB17729C8D00EC8051 /* UITableViewCell+JCIBExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+JCIBExtensions.m"; sourceTree = "<group>"; };
+		38A7FAD21773E64800529626 /* zipcodes.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = zipcodes.xml; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +104,7 @@
 		387542001772A67F00289B5D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				387542031772A6F100289B5D /* postalCodeData.xml */,
+				38A7FAD21773E64800529626 /* zipcodes.xml */,
 			);
 			name = Resources;
 			path = JCSDK/Resources;
@@ -260,7 +259,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3890AFA817729B5100EC8051 /* InfoPlist.strings in Resources */,
-				387542041772A6F100289B5D /* postalCodeData.xml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

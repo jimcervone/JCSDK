@@ -14,6 +14,8 @@ typedef NSString JCRegexPattern;
 JCRegexPattern * const JCRegexPatternUS = @"[1-9]\\d{4}([ \\-]\\d{4})?";
 JCRegexPattern * const JCRegexPatternMX = @"\\d{5}";
 JCRegexPattern * const JCRegexPatternCA = @"[ABCEGHJKLMNPRSTVXY]\\d[ABCEGHJ-NPRSTV-Z][ ]?\\d[ABCEGHJ-NPRSTV-Z]\\d";
+JCRegexPattern * const JCRegexPatternAU = @"\\d{4}";
+JCRegexPattern * const JCRegexPatternES = @"\\d{5}";
 
 @interface JCZipCode ()
 
@@ -69,6 +71,14 @@ JCRegexPattern * const JCRegexPatternCA = @"[ABCEGHJKLMNPRSTVXY]\\d[ABCEGHJ-NPRS
             
         case JCCountryCA:
             return JCRegexPatternCA;
+            break;
+            
+        case JCCountryAU:
+            return JCRegexPatternAU;
+            break;
+            
+        case JCCountryES:
+            return JCRegexPatternES;
             break;
             
         default:
