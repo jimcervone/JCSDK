@@ -98,7 +98,7 @@ JCCountryCode * const JCCountryCodeES = @"ES";
         [country setName:JCCountryNameCA];
         [country setRegex:JCRegexPatternCA];
     }
-    else if ([code isEqualToString:JCCountryNameMX])
+    else if ([code isEqualToString:JCCountryCodeMX])
     {
         [country setCode:code];
         [country setName:JCCountryNameMX];
