@@ -18,11 +18,11 @@ typedef NSString JCCountryCode;
 typedef NSString JCCountryName;
 typedef NSString JCRegexPattern;
 
-JCCountryCode * const JCCountryCodeUS = @"US";
-JCCountryCode * const JCCountryCodeMX = @"MX";
-JCCountryCode * const JCCountryCodeCA = @"CA";
-JCCountryCode * const JCCountryCodeAU = @"AU";
-JCCountryCode * const JCCountryCodeES = @"ES";
+extern JCCountryCode * const JCCountryCodeUS;
+extern JCCountryCode * const JCCountryCodeMX;
+extern JCCountryCode * const JCCountryCodeCA;
+extern JCCountryCode * const JCCountryCodeAU;
+extern JCCountryCode * const JCCountryCodeES;
 
 #pragma mark JCZipcode
 

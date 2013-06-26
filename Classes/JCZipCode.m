@@ -54,18 +54,23 @@
 
 JCCountryName * const JCCountryNameUS = @"United States";
 JCRegexPattern * const JCRegexPatternUS = @"\\d{5}([ \\-]\\d{4})?";
+JCCountryCode * const JCCountryCodeUS = @"US";
 
 JCCountryName * const JCCountryNameCA = @"Canada";
 JCRegexPattern * const JCRegexPatternCA = @"[ABCEGHJKLMNPRSTVXY]\\d[ABCEGHJ-NPRSTV-Z][ ]?\\d[ABCEGHJ-NPRSTV-Z]\\d";
+JCCountryCode * const JCCountryCodeCA = @"CA";
 
 JCCountryName * const JCCountryNameMX = @"Mexico";
 JCRegexPattern * const JCRegexPatternMX = @"\\d{5}";
+JCCountryCode * const JCCountryCodeMX = @"MX";
 
 JCCountryName * const JCCountryNameAU = @"Australia";
 JCRegexPattern * const JCRegexPatternAU = @"\\d{4}";
+JCCountryCode * const JCCountryCodeAU = @"AU";
 
 JCCountryName * const JCCountryNameES = @"Spain";
 JCRegexPattern * const JCRegexPatternES = @"\\d{5}";
+JCCountryCode * const JCCountryCodeES = @"ES";
 
 @interface JCCountry ()
 
