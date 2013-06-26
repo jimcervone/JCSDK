@@ -120,7 +120,6 @@ JCCountryCode * const JCCountryCodeES = @"ES";
     return country;
 }
 
-//all countries
 + (NSArray *)allCountries
 {
     static NSArray *countries;
@@ -133,6 +132,13 @@ JCCountryCode * const JCCountryCodeES = @"ES";
                       [JCCountry countryWithCode:JCCountryCodeES]];
     });
     return countries;
+}
+
+- (BOOL)isEqual:(id)object
+{
+    if (![object isMemberOfClass:[JCCountry class]]) return NO;
+    JCCountry *otherCountry = (JCCountry *)object;
+    return [[self code] isEqualToString:[otherCountry code]];
 }
 
 @end

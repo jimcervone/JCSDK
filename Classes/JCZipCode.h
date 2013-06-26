@@ -41,6 +41,7 @@ extern JCCountryCode * const JCCountryCodeES;
 
 + (id)countryWithCode:(JCCountryCode *)code;
 + (NSArray *)allCountries;
+- (BOOL)isEqual:(id)object;
 
 @property (nonatomic, readonly) JCCountryCode *code;
 @property (nonatomic, readonly) JCCountryName *name;
