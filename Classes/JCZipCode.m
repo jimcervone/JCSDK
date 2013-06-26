@@ -53,8 +53,7 @@
 #pragma mark - JCCountry
 
 JCCountryName * const JCCountryNameUS = NSLocalizedString(@"United States",nil);
-JCRegexPattern * const JCRegexPatternUS = @"[1-9]\\d{4}([ \\-]\\d{4})?";
-//JCRegexPattern * const JCRegexPatternUS = @"\\d{5}([ \\-]\\d{4})?";
+JCRegexPattern * const JCRegexPatternUS = @"\\d{5}([ \\-]\\d{4})?";
 
 JCCountryName * const JCCountryNameCA = NSLocalizedString(@"Canada",nil);
 JCRegexPattern * const JCRegexPatternCA = @"[ABCEGHJKLMNPRSTVXY]\\d[ABCEGHJ-NPRSTV-Z][ ]?\\d[ABCEGHJ-NPRSTV-Z]\\d";
