@@ -31,7 +31,7 @@ JCCountryCode * const JCCountryCodeES = @"ES";
 @property (nonatomic, readonly, getter = stringValue) NSString *zipCodeString;
 @property (nonatomic, readonly) JCCountry *country;
 
-+ (id)zipCodeWithString:(NSString *)string forCountry:(JCCountry)country;
++ (id)zipCodeWithString:(NSString *)string forCountry:(JCCountry *)country;
 
 @end
 
