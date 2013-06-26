@@ -8,29 +8,42 @@
 
 #import <Foundation/Foundation.h>
 
-typedef NSString JCRegexPattern;
-typedef NSString JCCountryName;
-typedef NSString JCCountryCode;
+@class JCZipCode;
+@class JCCountry;
 
 typedef void(^JCErrorCallbackBlock)();
 
 //  2-digit codes based on ISO 3166-1 alpha-2 country codes.
-typedef enum {
-    JCCountryUS,
-    JCCountryMX,
-    JCCountryCA,
-    JCCountryAU,
-    JCCountryES
-} JCCountry;
+typedef NSString JCCountryCode;
+typedef NSString JCCountryName;
+typedef NSString JCRegexPattern;
+
+JCCountryCode * const JCCountryCodeUS = @"US";
+JCCountryCode * const JCCountryCodeMX = @"MX";
+JCCountryCode * const JCCountryCodeCA = @"CA";
+JCCountryCode * const JCCountryCodeAU = @"AU";
+JCCountryCode * const JCCountryCodeES = @"ES";
+
+#pragma mark JCZipcode
 
 @interface JCZipCode : NSObject
 
 @property (nonatomic, readonly, getter = stringValue) NSString *zipCodeString;
-@property (nonatomic, readonly) JCCountry country;
+@property (nonatomic, readonly) JCCountry *country;
 
 + (id)zipCodeWithString:(NSString *)string forCountry:(JCCountry)country;
 
-- (JCCountryName *)countryName;
-- (JCCountryCode *)countryCode;
+@end
+
+#pragma mark - JCCountry
+
+@interface JCCountry : NSObject
+
++ (id)countryWithCode:(JCCountryCode *)code;
++ (NSArray *)allCountries;
+
+@property (nonatomic, readonly) JCCountryCode *code;
+@property (nonatomic, readonly) JCCountryName *name;
+@property (nonatomic, readonly) JCRegexPattern *regex;
 
 @end

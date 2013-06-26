@@ -8,31 +8,11 @@
 
 #import "JCZipCode.h"
 
-JCCountryName * const JCCountryNameUS = @"United States";
-JCCountryCode * const JCCountryCodeUS = @"US";
-//JCRegexPattern * const JCRegexPatternUS = @"\\d{5}([ \\-]\\d{4})?";
-JCRegexPattern * const JCRegexPatternUS = @"[1-9]\\d{4}([ \\-]\\d{4})?";
-
-JCCountryName * const JCCountryNameMX = @"Mexico";
-JCCountryCode * const JCCountryCodeMX = @"MX";
-JCRegexPattern * const JCRegexPatternMX = @"\\d{5}";
-
-JCCountryName * const JCCountryNameCA = @"Canada";
-JCCountryCode * const JCCountryCodeCA = @"CA";
-JCRegexPattern * const JCRegexPatternCA = @"[ABCEGHJKLMNPRSTVXY]\\d[ABCEGHJ-NPRSTV-Z][ ]?\\d[ABCEGHJ-NPRSTV-Z]\\d";
-
-JCCountryName * const JCCountryNameAU = @"Australia";
-JCCountryCode * const JCCountryCodeAU = @"AU";
-JCRegexPattern * const JCRegexPatternAU = @"\\d{4}";
-
-JCCountryName * const JCCountryNameES = @"Spain";
-JCCountryName * const JCCountryCodeES = @"ES";
-JCRegexPattern * const JCRegexPatternES = @"\\d{5}";
-
+#pragma mark JCZipCode
 @interface JCZipCode ()
 
 @property (nonatomic, readwrite) NSString *zipCodeString;
-@property (nonatomic, readwrite) JCCountry country;
+@property (nonatomic, readwrite) JCCountry *country;
 
 @end
 
@@ -48,9 +28,8 @@ JCRegexPattern * const JCRegexPatternES = @"\\d{5}";
     if (!(self = [super init])) return nil;
     
     NSString *zipString = [inputString uppercaseString];
-    JCRegexPattern *regexPattern = [self regexPatternForCountry:country];
     NSError *error = NULL;
-    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:regexPattern
+    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:[country regex]
                                                                            options:NSRegularExpressionCaseInsensitive
                                                                              error:&error];
     
@@ -65,106 +44,91 @@ JCRegexPattern * const JCRegexPatternES = @"\\d{5}";
         [self setCountry:country];
         return self;
     }
-    else
+    
+    return nil;
+}
+
+@end
+
+#pragma mark - JCCountry
+
+JCCountryName * const JCCountryNameUS = NSLocalizedString(@"United States",nil);
+JCRegexPattern * const JCRegexPatternUS = @"[1-9]\\d{4}([ \\-]\\d{4})?";
+//JCRegexPattern * const JCRegexPatternUS = @"\\d{5}([ \\-]\\d{4})?";
+
+JCCountryName * const JCCountryNameCA = NSLocalizedString(@"Canada",nil);
+JCRegexPattern * const JCRegexPatternCA = @"[ABCEGHJKLMNPRSTVXY]\\d[ABCEGHJ-NPRSTV-Z][ ]?\\d[ABCEGHJ-NPRSTV-Z]\\d";
+
+JCCountryName * const JCCountryNameMX = NSLocalizedString(@"Mexico",nil);
+JCRegexPattern * const JCRegexPatternMX = @"\\d{5}";
+
+JCCountryName * const JCCountryNameAU = NSLocalizedString(@"Australia",nil);
+JCRegexPattern * const JCRegexPatternAU = @"\\d{4}";
+
+JCCountryName * const JCCountryNameES = NSLocalizedString(@"Spain",nil);
+JCRegexPattern * const JCRegexPatternES = @"\\d{5}";
+
+@interface JCCountry ()
+
+@property (nonatomic, readwrite) JCCountryCode *code;
+@property (nonatomic, readwrite) JCCountryName *name;
+@property (nonatomic, readwrite) JCRegexPattern *regex;
+
+@end
+
+@implementation JCCountry
+
++ (id)countryWithCode:(JCCountryCode *)code
+{
+    JCCountry *country = [[JCCountry alloc] init];
+    
+    if ([code isEqualToString:JCCountryCodeUS])
     {
-        return nil;
+        [country setCode:code];
+        [country setName:JCCountryNameUS];
+        [country setRegex:JCRegexPatternUS];
     }
-}
-
-- (NSString *)countryCode
-{
-    return [self codeForCountry:[self country]];
-}
-
-- (NSString *)countryName
-{
-    return [self nameForCountry:[self country]];
-}
-
-- (NSString *)regexPatternForCountry:(JCCountry)country
-{
-    switch (country)
+    else if ([code isEqualToString:JCCountryCodeCA])
     {
-        case JCCountryUS:
-            return JCRegexPatternUS;
-            break;
-            
-        case JCCountryMX:
-            return JCRegexPatternMX;
-            break;
-            
-        case JCCountryCA:
-            return JCRegexPatternCA;
-            break;
-            
-        case JCCountryAU:
-            return JCRegexPatternAU;
-            break;
-            
-        case JCCountryES:
-            return JCRegexPatternES;
-            break;
-            
-        default:
-            break;
+        [country setCode:code];
+        [country setName:JCCountryNameCA];
+        [country setRegex:JCRegexPatternCA];
     }
-}
-
-- (JCCountryName *)nameForCountry:(JCCountry)country
-{
-    switch (country)
+    else if ([code isEqualToString:JCCountryNameMX])
     {
-        case JCCountryUS:
-            return JCCountryNameUS;
-            break;
-            
-        case JCCountryMX:
-            return JCCountryNameMX;
-            break;
-            
-        case JCCountryCA:
-            return JCCountryNameCA;
-            break;
-            
-        case JCCountryAU:
-            return JCCountryNameAU;
-            break;
-            
-        case JCCountryES:
-            return JCCountryNameES;
-            break;
-            
-        default:
-            break;
+        [country setCode:code];
+        [country setName:JCCountryNameMX];
+        [country setRegex:JCRegexPatternMX];
     }
+    else if ([code isEqualToString:JCCountryCodeAU])
+    {
+        [country setCode:code];
+        [country setName:JCCountryNameAU];
+        [country setRegex:JCRegexPatternAU];
+    }
+    else if ([code isEqualToString:JCCountryCodeES])
+    {
+        [country setCode:code];
+        [country setName:JCCountryNameES];
+        [country setRegex:JCRegexPatternES];
+    }
+    
+    return country;
 }
 
-- (JCCountryCode *)codeForCountry:(JCCountry)country
+//all countries
++ (NSArray *)allCountries
 {
-    switch (country) {
-        case JCCountryUS:
-            return JCCountryCodeUS;
-            break;
-            
-        case JCCountryMX:
-            return JCCountryCodeMX;
-            break;
-            
-        case JCCountryCA:
-            return JCCountryCodeCA;
-            break;
-            
-        case JCCountryAU:
-            return JCCountryCodeAU;
-            break;
-            
-        case JCCountryES:
-            return JCCountryCodeES;
-            break;
-            
-        default:
-            break;
-    }
+    static NSArray *countries;
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        countries = @[[JCCountry countryWithCode:JCCountryCodeUS],
+                      [JCCountry countryWithCode:JCCountryCodeCA],
+                      [JCCountry countryWithCode:JCCountryCodeMX],
+                      [JCCountry countryWithCode:JCCountryCodeAU],
+                      [JCCountry countryWithCode:JCCountryCodeES]];
+    });
+    return countries;
 }
 
 @end
