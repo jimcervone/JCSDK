@@ -18,12 +18,12 @@
 
 @implementation JCZipCode
 
-+ (id)zipCodeWithString:(NSString *)string forCountry:(JCCountry)country
++ (id)zipCodeWithString:(NSString *)string forCountry:(JCCountry *)country
 {
     return [[[self class] alloc] initWithZipCodeString:string forCountry:country];
 }
 
-- (id)initWithZipCodeString:(NSString *)inputString forCountry:(JCCountry)country
+- (id)initWithZipCodeString:(NSString *)inputString forCountry:(JCCountry *)country
 {
     if (!(self = [super init])) return nil;
     
