@@ -51,7 +51,6 @@
 @end
 
 #pragma mark - JCCountry
-
 JCCountryName * const JCCountryNameUS = @"United States";
 JCRegexPattern * const JCRegexPatternUS = @"\\d{5}([ \\-]\\d{4})?";
 JCCountryCode * const JCCountryCodeUS = @"US";
@@ -72,11 +71,19 @@ JCCountryName * const JCCountryNameES = @"Spain";
 JCRegexPattern * const JCRegexPatternES = @"\\d{5}";
 JCCountryCode * const JCCountryCodeES = @"ES";
 
+JCCountryName * const JCCountryNameGB = @"United Kingdom";
+JCRegexPattern * const JCRegexPatternGB = @"GIR[ ]?0AA|((AB|AL|B|BA|BB|BD|BH|BL|BN|BR|BS|BT|CA|CB|CF|CH|CM|CO|CR|CT|CV|CW|DA|DD|DE|DG|DH|DL|DN|DT|DY|E|EC|EH|EN|EX|FK|FY|G|GL|GY|GU|HA|HD|HG|HP|HR|HS|HU|HX|IG|IM|IP|IV|JE|KA|KT|KW|KY|L|LA|LD|LE|LL|LN|LS|LU|M|ME|MK|ML|N|NE|NG|NN|NP|NR|NW|OL|OX|PA|PE|PH|PL|PO|PR|RG|RH|RM|S|SA|SE|SG|SK|SL|SM|SN|SO|SP|SR|SS|ST|SW|SY|TA|TD|TF|TN|TQ|TR|TS|TW|UB|W|WA|WC|WD|WF|WN|WR|WS|WV|YO|ZE)(\\d[\\dA-Z]?[ ]?\\d[ABD-HJLN-UW-Z]{2}))|BFPO[ ]?\\d{1,4}";
+JCCountryCode * const JCCountryCodeGB = @"GB";
+
 @interface JCCountry ()
 
 @property (nonatomic, readwrite) JCCountryCode *code;
 @property (nonatomic, readwrite) JCCountryName *name;
 @property (nonatomic, readwrite) JCRegexPattern *regex;
+
+#if TARGET_OS_IPHONE
+@property (nonatomic, readwrite) UIKeyboardType keyboardType;
+#endif
 
 @end
 
@@ -91,30 +98,54 @@ JCCountryCode * const JCCountryCodeES = @"ES";
         [country setCode:code];
         [country setName:JCCountryNameUS];
         [country setRegex:JCRegexPatternUS];
+#if TARGET_OS_IPHONE
+        [country setKeyboardType:UIKeyboardTypeNumberPad];
+#endif
     }
     else if ([code isEqualToString:JCCountryCodeCA])
     {
         [country setCode:code];
         [country setName:JCCountryNameCA];
         [country setRegex:JCRegexPatternCA];
+#if TARGET_OS_IPHONE
+        [country setKeyboardType:UIKeyboardTypeNamePhonePad];
+#endif
     }
     else if ([code isEqualToString:JCCountryCodeMX])
     {
         [country setCode:code];
         [country setName:JCCountryNameMX];
         [country setRegex:JCRegexPatternMX];
+#if TARGET_OS_IPHONE
+        [country setKeyboardType:UIKeyboardTypeNumberPad];
+#endif
     }
     else if ([code isEqualToString:JCCountryCodeAU])
     {
         [country setCode:code];
         [country setName:JCCountryNameAU];
         [country setRegex:JCRegexPatternAU];
+#if TARGET_OS_IPHONE
+        [country setKeyboardType:UIKeyboardTypeNumberPad];
+#endif
     }
     else if ([code isEqualToString:JCCountryCodeES])
     {
         [country setCode:code];
         [country setName:JCCountryNameES];
         [country setRegex:JCRegexPatternES];
+#if TARGET_OS_IPHONE
+        [country setKeyboardType:UIKeyboardTypeNumberPad];
+#endif
+    }
+    else if ([code isEqualToString:JCCountryCodeGB])
+    {
+        [country setCode:code];
+        [country setName:JCCountryNameGB];
+        [country setRegex:JCRegexPatternGB];
+#if TARGET_OS_IPHONE
+        [country setKeyboardType:UIKeyboardTypeNamePhonePad];
+#endif
     }
     
     return country;
@@ -129,7 +160,8 @@ JCCountryCode * const JCCountryCodeES = @"ES";
                       [JCCountry countryWithCode:JCCountryCodeCA],
                       [JCCountry countryWithCode:JCCountryCodeMX],
                       [JCCountry countryWithCode:JCCountryCodeAU],
-                      [JCCountry countryWithCode:JCCountryCodeES]];
+                      [JCCountry countryWithCode:JCCountryCodeES],
+                      [JCCountry countryWithCode:JCCountryCodeGB]];
     });
     return countries;
 }
