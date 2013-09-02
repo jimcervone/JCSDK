@@ -21,6 +21,8 @@
 		3890AFAA17729B5100EC8051 /* JCSDKTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3890AFA917729B5100EC8051 /* JCSDKTests.m */; };
 		3890AFBC17729C8D00EC8051 /* UITableViewCell+JCIBExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3890AFBB17729C8D00EC8051 /* UITableViewCell+JCIBExtensions.m */; };
 		3890AFBD17729C8D00EC8051 /* UITableViewCell+JCIBExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3890AFBB17729C8D00EC8051 /* UITableViewCell+JCIBExtensions.m */; };
+		38C2F63C17D446B200E25E6B /* NSMutableArray+Stack.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C2F63B17D446B200E25E6B /* NSMutableArray+Stack.m */; };
+		38C2F63F17D4481E00E25E6B /* NSMutableArray+Queue.m in Sources */ = {isa = PBXBuildFile; fileRef = 38C2F63E17D4481E00E25E6B /* NSMutableArray+Queue.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +66,10 @@
 		3890AFBA17729C8D00EC8051 /* UITableViewCell+JCIBExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+JCIBExtensions.h"; sourceTree = "<group>"; };
 		3890AFBB17729C8D00EC8051 /* UITableViewCell+JCIBExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+JCIBExtensions.m"; sourceTree = "<group>"; };
 		38A7FAD21773E64800529626 /* zipcodes.xml */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = zipcodes.xml; sourceTree = "<group>"; };
+		38C2F63A17D446B200E25E6B /* NSMutableArray+Stack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Stack.h"; sourceTree = "<group>"; };
+		38C2F63B17D446B200E25E6B /* NSMutableArray+Stack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Stack.m"; sourceTree = "<group>"; };
+		38C2F63D17D4481E00E25E6B /* NSMutableArray+Queue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+Queue.h"; sourceTree = "<group>"; };
+		38C2F63E17D4481E00E25E6B /* NSMutableArray+Queue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+Queue.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +189,10 @@
 			children = (
 				3890AFBA17729C8D00EC8051 /* UITableViewCell+JCIBExtensions.h */,
 				3890AFBB17729C8D00EC8051 /* UITableViewCell+JCIBExtensions.m */,
+				38C2F63A17D446B200E25E6B /* NSMutableArray+Stack.h */,
+				38C2F63B17D446B200E25E6B /* NSMutableArray+Stack.m */,
+				38C2F63D17D4481E00E25E6B /* NSMutableArray+Queue.h */,
+				38C2F63E17D4481E00E25E6B /* NSMutableArray+Queue.m */,
 			);
 			name = Categories;
 			path = ../../Categories;
@@ -269,8 +279,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38C2F63C17D446B200E25E6B /* NSMutableArray+Stack.m in Sources */,
 				387541F51772A14B00289B5D /* JCDrawerTableViewController.m in Sources */,
 				3890AFBC17729C8D00EC8051 /* UITableViewCell+JCIBExtensions.m in Sources */,
+				38C2F63F17D4481E00E25E6B /* NSMutableArray+Queue.m in Sources */,
 				387541FD1772A3A300289B5D /* JCZipCode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
