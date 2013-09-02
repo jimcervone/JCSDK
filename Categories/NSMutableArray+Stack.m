@@ -10,6 +10,7 @@
 
 @implementation NSMutableArray (Stack)
 
+#pragma mark - Necessary Stack Methods
 - (void)push:(id)item
 {
     [self addObject:item];
@@ -20,6 +21,12 @@
     id item = [self lastObject];
     [self removeLastObject];
     return item;
+}
+
+#pragma mark - Other Contextually Useful Methods
+- (id)top
+{
+    return [self lastObject];
 }
 
 @end

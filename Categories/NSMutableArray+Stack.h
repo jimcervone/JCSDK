@@ -13,4 +13,6 @@
 - (void)push:(id)item;
 - (id)pop;
 
+- (id)top;
+
 @end
