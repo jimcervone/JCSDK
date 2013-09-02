@@ -10,4 +10,7 @@
 
 @interface NSMutableArray (Queue)
 
+- (void)enqueue:(id)item;
+- (id)dequeue;
+
 @end
